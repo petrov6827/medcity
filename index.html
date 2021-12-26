@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medcity</title>
+    <link href="/css/fonts.css" rel="stylesheet" />
+    <link href="/css/normalize.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/slider.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="content__header">
+        <div class="container">
+          <div class="header-breadcrumps">
+            <img src="/img/goback.svg" alt="go-back" />
+            <ul class="breadcrumps-list">
+              <li><a class="breadcrump__link" href="#">Главная</a></li>
+              <li><a class="breadcrump__link" href="#">Акции</a></li>
+            </ul>
+          </div>
+          <h1 class="header__title">Акции и спецпредложения</h1>
+          <h3 class="header__about">
+            В данном разделе представлены акции от сети клиник «Медгород»,
+            представленная здесь информация полностью актуальна.
+          </h3>
+          <img
+            src="/img/background-img.png"
+            alt="background-image"
+            class="background-image"
+          />
+        </div>
+      </div>
+
+      <div class="content__slider">
+        <div class="container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__content">
+                  <div class="slider-left">
+                    <div class="slider-left__promo">Акция</div>
+                    <div class="slider-left__title">
+                      Он-лайн консультация любого врача-терапевта
+                    </div>
+                    <div class="slider-discount">
+                      <div class="slider-discount__price">1 700 руб.</div>
+                      <div class="slider-discount__value">-30%</div>
+                    </div>
+                    <div class="slider__price">
+                      1 190 <span class="slider__price-small"> руб.</span>
+                    </div>
+                    <div class="slider-discount__date">
+                      Акция действует до 30.09.2021 г.
+                    </div>
+                    <div class="slider__btns">
+                      <button class="slider__btn orange">Записаться</button>
+                      <button class="slider__btn green">Подробнее</button>
+                    </div>
+                  </div>
+                  <div class="slider-right">
+                    <img src="/img/slide1.png" class="" alt="slide1" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+          </div>
+          <div class="swiper-button-prev prev"></div>
+          <div class="swiper-button-next next"></div>
+          <div class="swiper-pagination pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

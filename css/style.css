@@ -1,0 +1,131 @@
+@media (min-width: 1400px) {
+}
+
+body {
+  font-family: Proxima Nova;
+}
+
+.content__header {
+  background: rgba(239, 239, 239, 0.3);
+  min-height: 310px;
+  padding-top: 24px;
+  overflow: hidden;
+}
+.container {
+  width: 1310px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-breadcrumps {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.header-breadcrumps img {
+  margin-right: 20px;
+}
+
+.breadcrumps-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+a.breadcrump__link {
+  position: relative;
+  font-family: Proxima Nova;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: rgba(3, 80, 99, 0.7);
+  margin-right: 30px;
+  transition: 0.3s;
+}
+
+a.breadcrump__link::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  top: 50%;
+  left: -15px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(3, 80, 99, 0.7);
+}
+
+.breadcrumps-list li:first-child a.breadcrump__link:before {
+  display: none;
+}
+
+a.breadcrump__link:hover {
+  text-decoration: underline;
+}
+
+h1.header__title {
+  font-family: Museo Sans Cyrl;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  color: #014751;
+  margin-bottom: 25px;
+  cursor: default;
+}
+
+h3.header__about {
+  font-family: Museo Sans Cyrl;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 130%;
+  color: #014751;
+  display: flex;
+  max-width: 50%;
+  cursor: default;
+}
+
+.background-image {
+  position: absolute;
+  top: 12px;
+  right: 66px;
+}
+
+.content__slider {
+  margin-top: -135px;
+}
+
+/* //responsive iphoneX */
+@media (max-width: 400px) {
+  .container {
+    width: 375px;
+  }
+  .content__header .container {
+    padding: 0 30px;
+    width: 335px;
+  }
+  h1.header__title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .header-breadcrumps {
+    margin-bottom: 10px;
+  }
+
+  h3.header__about {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  img.background-image {
+    display: none;
+  }
+} ;
